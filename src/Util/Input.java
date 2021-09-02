@@ -6,12 +6,9 @@ import java.util.Arrays;
 
 public class Input {
 	
-	private static InputStreamReader isr;
-	private static BufferedReader br;
-	
 	public static int inputInteger() throws Exception{
-		isr = new InputStreamReader(System.in);
-        br = new BufferedReader(isr);
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
         int input = Integer.MIN_VALUE;
 		try {
 			input = Integer.parseInt(br.readLine());
@@ -24,8 +21,8 @@ public class Input {
 	}
 	
 	public static int[] inputIntegerArray() throws Exception{
-		isr = new InputStreamReader(System.in);
-        br = new BufferedReader(isr);
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
         int input[];
 		try {
 			input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -38,8 +35,8 @@ public class Input {
 	}
 	
 	public static String inputString() throws Exception{
-		isr = new InputStreamReader(System.in);
-        br = new BufferedReader(isr);
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
         String input = null;
 		try {
 			input = br.readLine();
